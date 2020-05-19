@@ -1,0 +1,637 @@
+body{
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+  font-family: sans-serif;
+  background:#eee;
+  overflow-x: hidden;
+}
+/* Global-css-colors */
+.white{
+  background: #ffffff;
+}
+.white-text{
+  color:white;
+}
+.red{
+  background: red;
+}
+.red-text{
+  color:red;
+}
+.milk{
+  background:#ffcae3;
+}
+.blue{
+  background: #2D3A;
+}
+.blue-text{
+  color:rgb(0, 38, 255);
+}
+.teal{
+  background: rgb(0, 28, 51);
+}
+.yellow{
+  background: yellow;
+}
+.yellow-text{
+  color:yellow;
+}
+.green{
+  background:rgb(43, 168, 43);
+}
+.indigo{
+  background: indigo;
+}
+.black{
+  background: black;
+}
+.black-text{
+  color:rgb(26, 24, 24);
+}
+.cyan{
+  background:#008cff;
+}
+.orange-text{
+  color:rgb(255, 51, 0)
+}
+
+.grey{
+  background:grey;
+}
+.grey-text{
+  color:grey;
+}
+
+/* End-of-Global-Css-colors */
+
+/* Global-Properties */
+.card{
+ box-shadow: 0px 8px 6px -7px black;
+}
+.margin{
+  margin:auto;
+}
+
+.d-flex{
+  display: flex;
+}
+.d-none{
+  display: none;
+}
+.left{
+  float:left;
+  position: relative;
+  left:5%;
+}
+.right{
+  float:right;
+  position: relative;
+  right:5%;
+}
+.center{
+  position:relative;
+  left:40%;
+  top:4%;
+  /* right:50%; */
+  /* margin:auto; */
+}
+/* End-of-Global-Properties */
+
+/* Navbar-section */
+.navbar{
+  justify-content: space-between;
+  width:100%;
+  position: relative;
+  height:80px;
+  position: fixed;
+  z-index:99999;
+}
+/* Brand-logo- setion */
+.brand-logo{
+  text-decoration: none;
+  font-size:1.4rem;
+  white-space: nowrap;
+  padding:0px 10px;
+}
+.logo-icon{
+  width:200px;
+  border-radius:30%;
+}
+/* Nav-right-section */
+.nav-right{
+  padding:30px;
+  list-style: none;
+}
+li a{
+  text-decoration: none;
+  color:rgb(253, 253, 253);
+  padding:15px;
+  font-size: 1.1rem;
+}
+.nav-right > li > a:hover{
+  background:rgb(2, 40, 145);
+  padding: 30px;
+  color:white;
+  transition: ease background 0.8s
+}
+
+.body-container{
+  width:90%;
+  /* height:300px; */
+  margin: auto;
+}
+/* Toggler */
+#toggle{
+  display:none;
+  justify-content:space-between;
+  padding:25px;
+  font-size:2rem;
+}
+.tip-section{
+  width:100%;
+  height:auto;
+  position:relative;
+  top:-1rem;
+  z-index: 2;
+}
+.tip-img{
+  width:100%;
+  height:auto;
+  position:relative;
+  top:6rem;
+  z-index: 2;
+}
+.tip-text-section h1{
+  width:100%;
+  height:auto;
+  position: relative;
+  top:-42rem;
+  left:5rem;
+
+}
+.tip-text-section p{
+  width:100%;
+  height:auto;
+  position: relative;
+  top:-42rem;
+  left:5rem;
+  font-size:1rem;
+  line-height:25px;
+  color:rgb(224, 223, 223);
+
+}
+.btn-1{
+  position: relative;
+  top:-38rem;
+  width:180px;
+  height:40px;
+  left:4rem;
+  border: none;
+  font-size:0.9rem;
+  font-family: Arial;
+  cursor: pointer;
+  transition-property:scroll;
+  transition-duration: 8s;
+  transition-delay: .2s;
+}
+.appointment{
+  width:400px;
+  height:530px;
+  background: rgb(0, 140, 255);
+  position: absolute;
+  border-radius:10px;
+  left:30rem;
+  top:16ex;
+  z-index: 999;
+}
+.appointment-form{
+  text-align:center;
+}
+input{
+  width:250px;
+  height:30px;
+  border-radius: 5px;
+  border:none;
+  font-size:1.1rem;
+  font-family: sans-serif;
+}
+.submit-appointment{
+  width:230px;
+  height:40px;
+  border-radius: 3px;
+  color:white;
+  border:none;
+  font-size:1.1rem;
+  font-family: sans-serif;
+}
+.btn-2{
+  position: relative;
+  top:-38rem;
+  width:180px;
+  height:40px;
+  left:4rem;
+  font-size:0.9rem;
+  /* background:rgb(240, 235, 235); */
+  border:none;
+  cursor: pointer;
+  font-family: Arial;
+}
+
+/* Registration-Section */
+.registration-form{
+  text-align:center;
+  width:25%;
+  height:700px;
+  z-index:99999;
+  /* background: linear-gradient(-360deg,teal, yellow);  */
+  background: rgb(209, 209, 209);
+  position: relative;
+  top:-122ex;
+  margin:auto;
+  border-radius: 10px;
+  /* overflow: scroll; */
+  /* overflow-x: hidden; */
+}
+#form{
+  display: inline-block;
+}
+.btn-container{
+  display: flex;
+  /* background: #111; */
+  padding: 10px;
+}
+.btn-container > .btn-3, .btn-4{
+  width:120px;
+  height:40px;
+  border-radius:5px;
+  /* background: rgb(0, 91, 211); */
+  margin:auto;
+  border:none;
+  font-size:1rem;
+  color:white;
+  font-weight: bold;
+  margin-top:2px;
+}
+label{
+  display:flex; 
+  font-size:1.1rem;
+  color:rgb(41, 38, 38);
+  margin:1px;
+}
+input{
+  width:200px;
+  border-radius: 7px;
+  border:none;
+  height:20px;
+  margin:10px;
+  padding:10px 25px;
+  background: white;
+  border:1px solid rgb(180, 182, 184);
+} 
+button[type=submit]{
+  width:250px;
+  height:40px;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  /* padding:5px 10px; */
+  border-radius:3px;
+  border: none;
+  position: absolute;
+  display:block;
+  background:rgb(45, 155, 45);
+  color:white;
+  margin:10px;
+}
+
+/* 3-div-container */
+
+/* .T-div-container{
+  background: rgb(241, 241, 241);
+  width:100%;
+  height:600px;
+  position: relative;
+  top:-16rem;
+} */
+.T-div-section{
+  width:100%;
+  display: flex;
+  margin:auto;
+  padding:15px 10px;
+  position:relative;;
+  top:-16rem !important;
+}
+.T-div-section-1{
+  width:350px;
+  height:500px;
+  border-radius: 10px;
+  margin:15px;
+  position: relative;
+  z-index: 1;
+  left:7%;
+}
+.main{
+  width:100%;
+  height:500px;
+  position: relative;
+  top:12ex;
+  display: flex;
+  margin:auto;
+}
+.T-div-img-section{
+  outline: hidden;
+  /* width:350px; */
+  z-index: 5;
+  height:200px;
+  position:relative;
+  border-radius:3%;
+  background: white;
+  /* border-bottom: 0.5px solid rgb(177, 178, 182); */
+
+}
+.T-img{
+  width:100%;
+  height:200px;
+}
+
+
+.T-About-section{
+  width:100%;
+  height:300px;
+  margin:auto;
+  display: flex;
+  padding:15px 10px;
+  position:relative;;
+  top:-16rem !important;
+}
+
+.T-About-content{
+  width:40%;
+  height:300px;
+  margin:auto;
+  text-align: center;
+  padding:15px 10px;
+  position:relative;;
+  top:-1ex;
+  font-size:2rem;
+  background-image: url(doctor3.jpeg);
+  /* box-shadow: 0px 10px 30px .1 rgba(0,0,0 .5) */
+}
+.container{
+  width:90%;
+  height:350px;
+}
+.wow-T{
+  width:40%;
+  height:300px;
+  position:relative;
+  top:-8rem;
+  background-image: url(community.jpeg);
+  background-size: cover;
+}
+.T-About-text > p{
+  width:230px;
+  position: relative;
+  top:-2ex;
+  text-align: left;
+  font-size:1rem;
+  font-family:cursive;
+  font-weight:400;  
+}
+footer{
+  width:100%;
+  height:200px;
+  color:#eee;
+  background: rgb(0, 37, 66);
+  position: relative;
+  bottom: 0;
+}
+.footer-body{
+  width:100%;
+margin-bottom: 40px;
+padding:30px;
+}
+#foot{
+  width:250px;
+  height:30px;
+  padding: 10px;
+  font-size:18px;
+  border-radius:5px;
+  border:none;
+}
+.footer-copyright{
+  width:100%;
+  height:40px;
+  background: #111;
+  padding:10px;
+  left:0;
+  position: absolute;
+  bottom: 0;
+}
+
+/* About Page */
+.content-box{
+  width:100%;
+  margin: ;
+}
+footer{
+  width:100%;
+  height:200px;
+  color:#eee;
+  background: rgb(0, 37, 66);
+  position: relative;;
+  bottom: 0;
+}
+
+/* End of About Page */
+
+@media(max-width:760px){
+  .navbar{
+    justify-content: space-between;
+    width:100%;
+  }
+  .nav-right{
+    position: absolute;
+    width:85%;
+    height:650px;
+    left:0;
+    background:rgb(4, 9, 19);
+    display:none;
+    z-index:1;
+    text-align: center;
+    padding:0;
+    margin: 0;
+    /* margin-right:12.1rem; */
+    transition:1.800s ease;
+  }
+  .nav-right > li{
+    display: flex;  
+  }
+  li > a{
+    color:white;
+    font-size:1em;
+    padding: 1em;
+    flex:1;
+  }
+  li > a:hover{
+    background: white;
+    color:black;
+  }
+ 
+  .medcare{
+    display:block;
+    padding:15px;
+    font-size:2rem;
+    color:yellow;
+    transition:1.800s ease;
+
+  }
+  .toggle{
+    display: block;
+    font-size: 2rem;
+    color:yellow;
+    padding: 25px;
+    cursor: pointer;
+  }
+  .tip-section{
+    width:100%;
+    height:auto;
+    position:relative;
+    z-index: 2;
+  } 
+  .tip-text-section h1{
+    width:300px;
+    position: relative;
+    top:-40rem;
+    left:1rem;
+    font-size:2rem;
+  }
+  .tip-text-section p{
+    /* background: red; */
+    position: relative;
+    top:-40rem;
+    left:1rem;
+    font-size:0.9rem;
+    color:rgb(255, 255, 255);
+  }
+  .btn-1{
+    position: relative;
+    top:-38.5rem;
+    width:150px;
+    height:40px;
+    left:1rem;
+    border: none;
+    border-radius: 3px;
+  }
+  
+.appointment{
+  width:300px;
+  height:530px;
+  background: rgb(0, 140, 255);
+  position: absolute;
+  border-radius:10px;
+  left:11rem;
+  top:11ex;
+  z-index: 999;
+}
+.appointment-form{
+  text-align:center;
+}
+input{
+  width:250px;
+  height:30px;
+  border-radius: 5px;
+  border:none;
+  font-size:1.1rem;
+  font-family: sans-serif;
+}
+.submit-appointment{
+  width:230px;
+  height:40px;
+  border-radius: 3px;
+  color:white;
+  border:none;
+  font-size:1.1rem;
+  font-family: sans-serif;
+}
+  .btn-2{
+    position: relative;
+    top:-38rem;
+    width:150px;
+    height:40px;
+    /* right:5rem; */
+    border: none;
+    border-radius: 3px;
+  }
+  
+.T-div-container{
+  background: rgb(241, 241, 241);
+  width:100%;
+  height:100%;
+  position: relative;
+  top:-16rem;
+}
+  .T-div-section{
+    display: block;
+    margin:10px;
+    padding:15px 10px;
+  }
+  .T-div-img-section{
+  outline: hidden;
+  width:350px;
+  z-index: 5;
+  height:200px;
+  position:relative;
+  top:0.2rem; 
+  border-radius: 5%;
+  background: white;
+}
+  .T-div-section-1{
+    width:350px;
+    /* height:420px; */
+    border-radius: 5px;
+    margin:25px;
+    position: relative;
+    left:5%;
+    right:0;
+    /* transition:1.800s ease */
+
+  }
+  .wow-T{
+    display: none;
+  }
+  .main{
+    width:100%;
+    height:500px;
+    display: block;
+  }
+  .T-About-section{
+    display: block;
+  }
+  .T-About-content{
+    width:90%;
+    margin: 15px;
+  }
+  .registration-form{
+    text-align:center;
+    width:90%;
+    height:720px;
+    z-index:99999;
+    background: rgb(209, 209, 209);
+    position: relative;
+    top:-122ex;
+    left:0px;
+    /* margin:auto; */
+    border-radius: 10px;
+  }
+  button[type=submit]{
+    width:300px;
+  }
+
+  .footer{
+    position: relative;
+    top:10rem;
+    height:300px;
+    z-index:2;
+  }
+}

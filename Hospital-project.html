@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>E-Hospitality</title>
+  <link rel="stylesheet" href="hospital-project.css">
+
+ 
+  <!-- icon-moon -->
+  <link rel="stylesheet" href="./icomoon/style.css">
+  <!-- end-of-icon-moon -->
+
+  
+
+</head>
+<script src="Hospital.js" ></script>
+<body>
+
+
+
+  <!-- <div class="body-container"> -->
+  <div class="navbar cyan margin d-flex ">
+    <a href="#" class="brand-logo">
+      <span class="logo-icon blue" style="position:relative; top:-2rem;"><i class="fa fa-user"></i></span>
+      <h3 class="yellow-text" style="position:relative; left:2rem; font-weight:600; font-family: sans-serif;">MEDCARE<br>
+        <span class="white-text" style="font-size:0.8rem; position:relative; top:-1rem">HEALTH SOLUTION</span>
+      </h3>
+      
+    </a>
+    <a   class="toggle d-none" onclick="myFun()">
+      <i class="icon-navicon" ></i>
+    </a>
+    <div class="nav-right d-flex" id="myDate"> 
+      <span class="white-text medcare d-none">Medcare</span>
+      <li><a href="Hospital-project.html">Home</a></li>
+      <li><a href="Hospital-About.html">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#" onclick="reg()">Register</a></li>
+      <li><a href="#">Terms and condition</a></li>
+
+
+    </div>
+   
+  </div>
+
+
+
+
+  <!-- Tip-img-section -->
+  <div class="tip-section ">
+    <div class="tip-img">
+      <img src="doctor4.jpg"tip-image" width="100%" height="700">
+  
+    <div class="tip-text-section">
+      <h1 class="white-text" style="font-weight: bold; font-family: sans-serif;">Making Health <br>
+        Care Better Together</h1>
+    
+      <p class="white-text">
+      Also you dry creeping beast multiple fourth<br> abundantly our itself signs bring our. won<br> form living. Whose dry you seasons divide<br> given gathering great in whose  you'll greater<br> let livin  form beast sinthete better Together<br>  these place absolute right..
+     </p>
+      <a href="#">
+      <button class="btn-1 cyan white-text card" onclick="myAppointment()">Make An Appointment</button>
+  
+      <button class="btn-2 cyan white-text card">View Department</button>
+    </a>
+  </div>
+    <!-- </div> -->
+  </div>
+</div>
+<div class="appointment d-none" id="myBook">
+  <div class="appointment-form" >
+    <h2 class="yellow-text">fix an Appointment</h2>
+    <div class="input-form">
+      <label for="input" class="white-text">Firstname</label><br>
+      <input type="text" name="" class="card"  placeholder="" id=""><br><br>
+
+      <label for="input" class="white-text">Lastname</label><br>
+      <input type="text" class="card"  placeholder="" id=""><br><br>
+
+      <label for="input" class="white-text">Phone</label><br>
+      <input type="number" name=""  class="card"  placeholder="+234" id=""><br><br>
+
+      <label for="input" class="white-text">Choose Date</label><br>
+      <input type="date" name="" class="card" placeholder="" id=""><br><br>
+
+
+      <label for="input" class="white-text">Diagnosis</label><br>
+      <textarea name="" id="" cols="35" rows="5" placeholder="Tell us how you feel!!" class="card"></textarea>
+      <br><br>
+
+      <button type="submit" class="blue card submit-appointment">Book Appointment</button>
+    </div>
+  </div>
+</div>
+
+<div class="registration-form d-none card"  id="myReg">
+
+  <form id="form">
+
+    <h3 style="font-family: sans-serif; font-weight: bold; font-size: 2.1rem;"><h1 class="blue-text">Med <span class="blue-text">Care</span></h1> 
+      <span class="grey-text">Health solution</span>
+    
+    </h3><br>
+
+<div class="btn-container">
+  <button class="btn-3 green card"  onclick="myLogin()">Register</button>
+
+  <button class="btn-4 green card" onclick="myLogin()">Login</button>
+
+</div><br>
+<div id="hide-reg" >
+<label for="fname">Firstname</label>
+
+<input type="text"  placeholder="First name">
+
+<label for="Lname">Last name</label>
+
+<input type="text" placeholder="Last name">
+
+<label for="Email">Email</label>
+
+<input type="email" placeholder="example@gmail.com">
+
+
+</div>
+
+
+  <label for="Username">Username</label>
+
+  <input type="text" placeholder="Username">
+  
+  <label for="password">Password</label>
+  
+  <input type="password" placeholder="Password"><br>
+
+<button type="submit" class="card" id="close-reg" onclick="closeReg()">submit</button>
+
+  </form>
+
+</div>
+  <!-- end-of-container-section -->
+
+
+
+
+
+
+
+
+
+
+  <!-- Container-section -->
+  <!-- <div class="T-div-containe"> -->
+    <!-- 3-div-section-container -->
+    <div class="T-div-section  margin">
+      <!-- 3-div-first-section -->
+      <div class="T-div-section-1 cyan card">
+       
+        <div class="T-div-img-section ">
+          <img src="corona.jpg" alt="" class="T-img">
+        </div>
+        
+        <div class="T-div-section-content">
+          <h1 style="text-align:center; font-weight: bold; font-family:sans-serif; font-size: 2rem; " class="white-text">Corona symptoms
+          </h1>
+            
+          <p class="white-text"  style="font-family: tahoma; font-size: 1.1rem; text-align: center;">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, tenetur.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, consectetur.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quo.
+            </p>
+        </div>
+      </div>
+
+      <div class="T-div-section-1 cyan card">
+        <div class="T-div-img-section white">
+          <img src="malaria.jpg" alt="" class="T-img">
+        </div>
+
+        <div class="T-div-section-content">
+          <h1 style="text-align:center; font-weight: bold; font-family:sans-serif; font-size: 2rem; " class="white-text">malaria symptoms
+          </h1>
+          <p class="white-text"  style="font-family: tahoma; font-size: 1.1rem; text-align: center;">
+            Malaria can occur if a mosquito infected with the Plasmodium parasite bites you. There are four kinds of malaria parasites that can infect humans: Plasmodium vivax, P. ovale, P. malariae, and P. falciparum.
+
+            P. falciparum causes a more severe form of the disease and those who contract this form of malaria have a higher risk of death.
+            
+          
+            </p>
+        </div>
+      </div>
+
+            <div class="T-div-section-1 cyan card">
+              <div class="T-div-img-section white">
+                <img src="register.jpg" alt="" class="T-img">
+              </div>
+
+              <div class="T-div-section-content">
+                <h1 style="text-align:center; font-weight: bold; font-family:sans-serif; font-size: 2rem; " class="white-text">Ankle
+                </h1>
+                  
+                <p class="white-text"  style="font-family: tahoma; font-size: 1.1rem; text-align: center;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, tenetur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, consectetur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quo.
+                    lo
+                  </p>
+              </div>      
+
+
+              
+      </div>
+    </div><br><br>
+
+
+
+    <div class="T-About-section">
+
+      <div class="T-About-content teal">
+          <h4 class="black-text left">OUR MISSION</h4>
+            <div class="T-About-text" style="font-family: sans-serif;">
+              <p class="black-text">To be a company committed to provide affordable, quality, age and gender specific health care services tailored to meeting the needs of individuals and groups through innovative approach that enhances the delivery of excellent Services</p>
+            </div>
+    </div>
+
+  <div class="T-About-content teal" style="background-image: url(doctor1.jpeg); background-size: cover;">
+          <h4 class="black-text left">OUR SERVICE</h4>
+          <div class="T-About-text" style="font-family: sans-serif;">
+            <p class="black-text">To promote the Health Care The good health of our Patients andd to promote ont of the best  Working Hospitall</p>
+          </div>
+      </div>
+    </div>
+
+
+   
+      <div class="wow-T right cyan">
+        <h1 class="grey-text" style="position: relative; font-size:1.7rem; top:-5rem; text-align: center; font-family: sans-serif;">COMMUNITY</h1>
+
+      </div>
+    </div>
+</div><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>
+  <div class="footer-body">
+    <div class="white-text"><span class="white-text">Medicare Hospitality</span>
+     </div>
+     <input type="text" name="Email" id="foot" placeholder="Email">
+  </div>
+  <div class="footer-copyright">
+    <span>&copy; copywrite   medicare Hospitality</span>
+  </div>
+</footer>
+
+
+
+
+<script src="C:\Users\OVUOTA\Documents\HTML CODES\Hospital-Project\materialize-v1.0.0\materialize\js"></script>
+</body>
+</html>
